@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="app/img/favicon.ico">
+  <title>Cisco Spark Sample App</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="vendor/css/bootstrap.css" />
+  <!-- endbower -->
+
+
+  <!-- inject:css -->
+  <!-- endinject -->
+  <link href="app/css/style.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="CiscoSpark" ng-controller="MainController">
+  <div class="container-fluid">
+    <div class="row" style="background-color: #0076A2;">
+      <br/>
+      <div class="col-md-3">
+        <img src="app/img/shipped.png" height="60px">
+<img src="https://ciscoshipped.io/images/logo-white.png" height="40px">
+      </div>
+      <div class="col-md-3">
+<img src="app/img/logo.png" height="60px"/>
+      </div>
+      <div class="col-md-6">
+        <p class="pull-right">
+          <button type="button" class="btn btn-default" ng-show="!isLoggedIn" ng-click="open()">Login</button>
+          <button type="button" class="btn btn-default" ng-show="isLoggedIn" ng-click="logout()">Logout</button>
+        </p>
+      </div>
+    </div>
+    <div ui-view></div>
+  </div>
+
+  <!-- bower:js -->
+  <script src="vendor/js/jquery.js"></script>
+  <script src="vendor/js/angular.js"></script>
+  <script src="vendor/js/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/js/angular-resource.js"></script>
+  <script src="vendor/js/angular-ui-router.js"></script>
+  <script src="vendor/js/angular-messages.js"></script>
+  <script src="vendor/js/angular-cookies.js"></script>
+  <!-- endbower -->
+  <!-- inject:js -->
+  <!-- endinject -->
+
+
+  <script src="app/app.js"></script>
+  <script src="app/controllers/mainController.js"></script>
+  <script src="app/controllers/roomsCtrl.js"></script>
+  <script src="app/controllers/messagesCtrl.js"></script>
+  <script src="app/services/services.js"></script>
+</body>
+
+</html>
